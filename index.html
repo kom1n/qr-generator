@@ -1,1 +1,43 @@
+// index.html
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jednoduchý generátor QR kódů">
+    <title>QR Generátor</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <h1>QR Generátor</h1>
+        <p>Vytvořte si vlastní QR kód snadno a rychle</p>
+    </header>
 
+    <main class="container">
+        <div class="controls">
+            <input type="text" id="content" placeholder="Zadejte text nebo URL">
+            <select id="size">
+                <option value="256">256x256</option>
+                <option value="512">512x512</option>
+                <option value="1024">1024x1024</option>
+            </select>
+            <button onclick="generateQR()">Generovat</button>
+        </div>
+        
+        <div class="preview" id="qrcode"></div>
+        
+        <div class="download-options">
+            <button onclick="downloadQR('png')">Stáhnout PNG</button>
+            <button onclick="downloadQR('svg')">Stáhnout SVG</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>Vytvořeno s ❤️ | <a href="https://github.com/username/qr-generator">GitHub</a></p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
