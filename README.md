@@ -9,4 +9,4 @@ Jednoduchý generátor QR kódů vytvořený v čistém JavaScriptu.
 - Žádné externí závislosti kromě QR knihovny
 
 ## Použití
-Navštivte [https://kom1n.github.io/qr-generator/](https://username.github.io/qr-generator)
+Navštivte [https://kom1n.github.io/qr-generator/](https://kom1n.github.io/qr-generator/)
